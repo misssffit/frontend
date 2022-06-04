@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var checkDriverAge =  function(){
+            var age = prompt("Скільки Вам років?");
+
+            if (Number(age) < 18) {
+                alert("Вибачте, Ви занадто молодий, щоб керувати цим авто. Доступ заблоковано");
+            } else if (Number(age) > 18) {
+                alert("Двигун ввімкнено. Приємної подорожі!");
+            } else if (Number(age) === 18) {
+                alert("Вітаємо з першим водійським досвідом! Приємної подорожі!");
+            }
+        }
+        checkDriverAge();
+        function checkDriverAge1(){
+            var age = prompt("Скільки Вам років?");
+
+            if (Number(age) < 18) {
+                alert("Вибачте, Ви занадто молодий, щоб керувати цим авто. Доступ заблоковано");
+            } else if (Number(age) > 18) {
+                alert("Двигун ввімкнено. Приємної подорожі!");
+            } else if (Number(age) === 18) {
+                alert("Вітаємо з першим водійським досвідом! Приємної подорожі!");
+            }
+        }
+       checkDriverAge1();
+        function checkDriverAge2(e){
+            if (e < 18) {
+                console.log("Вибачте, Ви занадто молодий, щоб керувати цим авто. Доступ заблоковано");
+            } else if (e > 18) {
+                console.log("Двигун ввімкнено. Приємної подорожі!");
+            } else if (e === 18) {
+                console.log("Вітаємо з першим водійським досвідом! Приємної подорожі!");
+            }
+        }
+        checkDriverAge2(40);
+    </script>
+</body>
+</html>
